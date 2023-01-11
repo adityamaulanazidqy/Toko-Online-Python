@@ -14,13 +14,13 @@ drink3 = Drink('Espresso', 3, 30)
 drinks = [drink1, drink2, drink3]
 
 print('Makanan')
-index = 0
+index = 1
 for food in foods:
     print(str(index) + '. ' + food.info())
     index += 1
 
 print('Minuman')
-index = 0
+index = 1
 for drink in drinks:
     print(str(index) + '. ' + drink.info())
     index += 1
