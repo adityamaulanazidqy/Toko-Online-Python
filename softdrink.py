@@ -1,6 +1,6 @@
 from menu_item import MenuItem
 
-class Drink(MenuItem):
+class SoftDrink(MenuItem):
     def __init__(self, name, price, volume):
         super().__init__(name, price)
         self.volume = volume

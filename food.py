@@ -6,7 +6,7 @@ class Food(MenuItem):
         self.calorie_count = calorie_count
     
     def info(self):
-        return self.name + ': $' + str(self.price) + ' (' + str(self.calorie_count) + 'kkal)'
+        return self.name + ': ' + str(self.price) + 'k  (' + str(self.calorie_count) + 'kkal)'
     
     def calorie_info(self):
         print('kkal: ' + str(self.calorie_count))
