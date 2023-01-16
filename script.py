@@ -3,6 +3,13 @@ from drink import Drink
 from snack import Snack
 from softdrink import SoftDrink
 
+# Jika Ingin Menggunakan Function
+
+# from makanan_berat import Berat
+# from makanan_ringan import Ringan
+# from minuman_dingin import Dingin
+# from minuman_panas import Panas
+
 food1 = Food('Nasi Goreng', 11, 330)
 food2 = Food('Rujak Cingur', 9, 450)
 food3 = Food('Tahu Tek', 12, 550)
@@ -27,53 +34,128 @@ drink3 = Drink('Kopi Espresso', 10, 30)
 
 drinks = [drink1, drink2, drink3]
 
+
 print('Selamat Datang Di Warung Python Zidqy')
 print('Berikut Ini Beberapa List Menu Makanan & Minuman')
+
 print('--------------------')
-print('Makanan Berat')
-index = 0
-for food in foods:
-    print(str(index) + '. ' + food.info())
-    index += 1
+print('- List Menu Hidangan')
 
-print('Makanan Ringan')
-index = 0
-for snack in snacks:
-    print(str(index) + '. ' + snack.info())
-    index += 1
-
-print('Minuman Dingin')
-index = 0
-for softdrink in softdrinks:
-    print(str(index) + '. ' + softdrink.info())
-    index += 1
-
-print('Minuman Panas')
-index = 0
-for drink in drinks:
-    print(str(index) + '. ' + drink.info())
-    index += 1
+print('1. Makanan')
+print('2. Minuman')
 
 print('--------------------')
 
-food_order = int(input('Masukkan List makanan Berat : '))
-selected_food = foods[food_order]
+menu = int(input('Pilih List Diatas : '))
 
-snack_order = int(input('Masukkan List makanan Ringan : '))
-selected_snack = snacks[snack_order]
+# Jika Memilih Makanan
 
-softdrink_order = int(input('Masukkan List minuman Dingin : '))
-selected_softdrink = drinks[softdrink_order]
+if menu == 1 :
+            print('- List Makanan')
+            print('--------------------')
+            print('1. Makanan Berat')
+            print('2. Makanan Ringan')
+            print('--------------------')
+            input_makanan = int(input('Makanan Apa Yang Kamu Inginkan Kawan? : '))
 
-drink_order = int(input('Masukkan List minuman Panas : '))
-selected_drink = drinks[drink_order]
+            # Jika Memilih Makanan Berat
+            if input_makanan == 1 :
+                print('- List Makanan Berat')
+                print('--------------------')
+                print('1. Rujak Cingur  - Harga : 9k')
+                print('2. Nasi Goreng   - Harga : 11k')
+                print('3. Tahu Tek      - Harga : 13k')
+                print('4. Untuk Kembali Ke Menu Sebelumnya')
+                print('--------------------')
+                pilih_makananberat = int(input("Pilihlah Berbagai Minuman Di Atas : "))
+                order_makananberat = int(input("Mau Pesen Berapa? : "))
+                if pilih_makananberat == 1 :
+                    print("Jadi Totalnya Adalah : ", 9 * order_makananberat,'k')
+                elif pilih_makananberat == 2 :
+                    print("Jadi Totalnya Adalah : ", 11 * order_makananberat,'k')
+                elif pilih_makananberat == 3 :
+                    print("Jadi Totalnya Adalah : ", 13 * order_makananberat,'k')
+                elif pilih_makananberat == 4 :
+                    print("Anda Telah Kembali ")
+                else :
+                    print("Pilihan Tidak Dimengerti") 
 
+            # Jika Memilih Makanan Ringan
+            elif input_makanan == 2 :
+                print('- List Makanan Ringan')
+                print('--------------------')
+                print('1. Kripik Tempe  - Harga : 8k')
+                print('2. Citathos      - Harga : 4k')
+                print('3. Roti Nana     - Harga : 2k')
+                print('4. Untuk Kembali Ke Menu Sebelumnya')
+                print('--------------------')
+                pilih_makananringan = int(input("Pilihlah Berbagai Minuman Di Atas : "))
+                order_makananringan = int(input("Mau Pesen Berapa? : "))
+                if pilih_makananringan == 1 :
+                    print("Jadi Totalnya Adalah : ", 8 * order_makananringan,'k')
+                elif pilih_makananringan == 2 :
+                    print("Jadi Totalnya Adalah : ", 4 * order_makananringan,'k')
+                elif pilih_makananringan == 3 :
+                    print("Jadi  Adalah : ", 2 * order_makananringan,'k')
+                elif pilih_makananringan == 'x' :
+                    print("Anda Telah Kembali ")
+                else :
+                    print("Pilihan Tidak Dimengerti")
+            else :
+                print('Masukkan List Yang Benar')
+        
+# Jika Memilih Minuman
+elif menu == 2 :
+            print('- List Minuman')
+            print('--------------------')
+            print('1. Minuman Dingin')
+            print('2. Minuman Panas')
+            print('--------------------')
+            input_minuman = int(input("Minuman Apa Yang Kamu Inginkan Kawan? : "))
 
-# Ambil input dari console dan tetapkan ke variable count
-count = int(input('Mau Pesan berapa paket makanan berat? (Mumpung Ada Diskon 10% untuk 3 atau lebih Loh!): '))
+            # Jika Memilih Minuman Dingin
+            if input_minuman == 1 :
+                    print('- List Minuman Dingin')
+                    print('--------------------')
+                    print('1. Es Joshua     - Harga : 4k')
+                    print('2. Es Campur     - Harga : 8k')
+                    print('3. Es Cincau     - Harga : 6k')
+                    print('4. Untuk Kembali Ke Menu Sebelumnya')
+                    print('--------------------')
+                    pilih_minumandingin = int(input("Pilihlah Berbagai Minuman Di Atas : "))
+                    order_minumdingin = int(input("Mau Pesen Berapa? : "))
+                    if pilih_minumandingin == 1 :
+                        print("Jadi Totalnya Adalah : ", 4 * order_minumdingin,'k')
+                    elif pilih_minumandingin == 2 :
+                        print("Jadi Totalnya Adalah : ", 8 * order_minumdingin,'k')
+                    elif pilih_minumandingin == 3 :
+                        print("Jadi Totalnya Adalah : ", 6 * order_minumdingin,'k')
+                    elif pilih_minumandingin == 'x' :
+                        print("Anda Telah Kembali ")
+                    else :
+                        print("Pilihan Tidak Dimengerti")
 
-# Panggil method get_total_price dari selected_food dan selected_drink
-result = selected_food.get_total_price(count) +  selected_snack.get_total_price(count) + selected_drink.get_total_price(count) + selected_softdrink.get_total_price(count) 
-# Cetak 'Total harga adalah $____'
-print('Total harga adalah ' + str (result) + 'k')
-print('Terima Kasih Sudah Beli Di Warung Python Saya...')
+            # Jika Memilih Minuman Panas
+            elif input_minuman == 2 :
+                    print('- List Minuman Panas')
+                    print('--------------------')
+                    print('1. Kopi Hitam    - Harga : 8k')
+                    print('2. Kopi ToraMoca - Harga : 4k')
+                    print('3. Kopi Espresso - Harga : 2k')
+                    print('4. Untuk Kembali Ke Menu Sebelumnya')
+                    print('--------------------')
+                    pilih_minumanpanas = int(input("Pilihlah Berbagai Minuman Di Atas : "))
+                    order_minumpanas = int(input("Mau Pesen Berapa? : "))
+                    if pilih_minumanpanas == 1 :
+                        print("Jadi Totalnya Adalah : ", 4 * order_minumpanas,'k')
+                    elif pilih_minumanpanas == 2 :
+                        print("Jadi Totalnya Adalah : ", 8 * order_minumpanas,'k')
+                    elif pilih_minumanpanas == 3 :
+                        print("Jadi Totalnya Adalah : ", 6 * order_minumpanas,'k')
+                    elif pilih_minumanpanas == 'x' :
+                        print("Anda Telah Kembali ")
+                    else :
+                        print("Pilihan Tidak Dimengerti")
+else :
+        print('Masukkan List Yang Benar')
+            
