@@ -1,24 +1,27 @@
 while True :
     # Pembukaan
-    print('---------------------------------------------')
-    print('>_< Selamat Datang Di Warung Python Zidqy >_<')
-    print('---------------------------------------------') 
+    print(' -----------------------------------------------')
+    print('| >_< Selamat Datang Di Warung Python Zidqy >_< |')
+    print(' -----------------------------------------------') 
     print('\n👇 Berikut Ini Beberapa List Menu Makanan & Minuman 👇\n')
-    print('- List Menu Hidangan')
-    print(' -------------------')
-
+    print(' --------------------')
+    print('| List Menu Hidangan |')
+    print(' --------------------')
     print('| 1. Makanan         |')
     print('| 2. Minuman         |')
+    print(' --------------------')
     print('| 3. Keluar ✖️        |')
 
-    print(' -------------------')
+    print(' --------------------')
 
     menu = int(input('\nPilih List Diatas : '))
 
     # Jika Memilih Makanan
 
     if menu == 1 :
-            print('\n- List Makanan')
+            print('\n        --------------')
+            print('       | List Makanan |')
+            print('        --------------')
             print(' ---------------------------')
             print('| 1. Makanan Berat           |')
             print('| 2. Makanan Ringan          |')
@@ -29,7 +32,9 @@ while True :
 
             # Jika Memilih Makanan Berat
             if input_makanan == 1 :
-                print('\n- List Makanan Berat')
+                print('\n       --------------------')
+                print('      | List Makanan Berat |')
+                print('       --------------------')
                 print(' -------------------------------')
                 print('|     Nome        |     Harga   |')
                 print(' -------------------------------')
@@ -49,7 +54,9 @@ while True :
                     if yakin_berat_1 == 'yah' :
                         continue
                     elif yakin_berat_1 == 'tidak' :
-                        print('\nYah Sudah Datang Kembali Yah Kapan\"\n')
+                        print('\n ---------------------')
+                        print('|    Selamat Makan!   |')
+                        print(' ---------------------\n')
                         break
                     else :
                         print('\nAnda Keluar, Masukkan Tidak Dimengerti\n')
@@ -62,7 +69,9 @@ while True :
                     if yakin_berat_2 == 'yah' :
                         continue
                     elif yakin_berat_2 == 'tidak' :
-                        print('\nYah Sudah Datang Kembali Yah Kapan\"\n')
+                        print('\n ---------------------')
+                        print('|    Selamat Makan!   |')
+                        print(' ---------------------\n')
                         break
                     else :
                         print('\nAnda Keluar, Masukkan Tidak Dimengerti\n')
@@ -74,7 +83,9 @@ while True :
                     if yakin_berat_3 == 'yah' :
                         continue
                     elif yakin_berat_3 == 'tidak' :
-                        print('\nYah Sudah Datang Kembali Yah Kapan\"\n')
+                        print('\n ---------------------')
+                        print('|    Selamat Makan!   |')
+                        print(' ---------------------\n')
                         break
                     else :
                         print('\nAnda Keluar, Masukkan Tidak Dimengerti\n')
@@ -90,7 +101,9 @@ while True :
 
             # Jika Memilih Makanan Ringan
             elif input_makanan == 2 :
-                print('\n- List Makanan Ringan')
+                print('\n      ---------------------')
+                print('     | List Makanan Ringan |')
+                print('      ---------------------')
                 print(' -------------------------------')
                 print('|     Nomer       |     Harga   |')
                 print(' -------------------------------')
@@ -110,7 +123,9 @@ while True :
                     if yakin_ringan_1 == 'yah' :
                         continue
                     elif yakin_ringan_1 == 'tidak' :
-                        print('\nYah Sudah Datang Kembali Yah Kapan\"\n')
+                        print('\n ---------------------')
+                        print('|    Selamat Makan!   |')
+                        print(' ---------------------\n')
                         break
                     else :
                         print('\nAnda Keluar, Masukkan Tidak Dimengerti\n')
@@ -122,7 +137,9 @@ while True :
                     if yakin_ringan_2 == 'yah' :
                         continue
                     elif yakin_ringan_2 == 'tidak' :
-                        print('\nYah Sudah Datang Kembali Yah Kapan\"\n')
+                        print('\n ---------------------')
+                        print('|    Selamat Makan!   |')
+                        print(' ---------------------\n')
                         break
                     else :
                         print('\nAnda Keluar, Masukkan Tidak Dimengerti\n')
@@ -134,7 +151,9 @@ while True :
                     if yakin_ringan_3 == 'yah' :
                         continue
                     elif yakin_ringan_3 == 'tidak' :
-                        print('\nYah Sudah Datang Kembali Yah Kapan\"\n')
+                        print('\n ---------------------')
+                        print('|    Selamat Makan!   |')
+                        print(' ---------------------\n')
                         break
                     else :
                         print('\nAnda Keluar, Masukkan Tidak Dimengerti\n')
@@ -154,7 +173,8 @@ while True :
         
     # Jika Memilih Minuman
     elif menu == 2 :
-            print('\n- List Minuman')
+            print('\n        --------------      ')
+            print('       | List Minuman |       ')
             print(' ----------------------------')
             print('| 1. Minuman Dingin           |')
             print('| 2. Minuman Panas            |')
@@ -165,7 +185,9 @@ while True :
 
             # Jika Memilih Minuman Dingin
             if input_minuman == 1 :
-                    print('\n- List Minuman Dingin 🥶')
+                    print('\n      ---------------------    ')
+                    print('     | List Minuman Dingin |     ')
+                    print('      ---------------------    ')
                     print(' --------------------------------')
                     print('|     Nomer       |     Harga    |')
                     print(' --------------------------------')
@@ -175,7 +197,7 @@ while True :
                     print('|--------------------------------|')
                     print('| 4. Kembali Ke Menu Hidangan    |')
                     print('| 5. Keluar ✖️                    |')
-                    print(' -------------------------------')
+                    print(' --------------------------------')
                     pilih_minumandingin = int(input("\nPilihlah Berbagai Minuman Dingin Di Atas : "))
 
                     if pilih_minumandingin == 1 :
@@ -186,7 +208,9 @@ while True :
                         if yakin_dingin_1 == 'yah' :
                             continue
                         elif yakin_dingin_1 == 'tidak' :
-                            print('\nYah Sudah Datang Kembali Yah Kapan\"\n')
+                            print('\n ---------------------')
+                            print('|    Selamat Makan!   |')
+                            print(' ---------------------\n')
                             break
                         else :
                             print('\nAnda Keluar, Masukkan Tidak Dimengerti\n')
@@ -199,7 +223,9 @@ while True :
                         if yakin_dingin_2 == 'yah' :
                             continue
                         elif yakin_dingin_2 == 'tidak' :
-                            print('\nYah Sudah Datang Kembali Yah Kapan\"\n')
+                            print('\n ---------------------')
+                            print('|    Selamat Makan!   |')
+                            print(' ---------------------\n')
                             break
                         else :
                             print('\nAnda Keluar, Masukkan Tidak Dimengerti\n')
@@ -212,7 +238,9 @@ while True :
                         if yakin_dingin_3 == 'yah' :
                             continue
                         elif yakin_dingin_3 == 'tidak' :
-                            print('\nYah Sudah Datang Kembali Yah Kapan\"\n')
+                            print('\n ---------------------')
+                            print('|    Selamat Makan!   |')
+                            print(' ---------------------\n')
                             break
                         else :
                             print('\nAnda Keluar, Masukkan Tidak Dimengerti\n')
@@ -228,7 +256,9 @@ while True :
 
             # Jika Memilih Minuman Panas
             elif input_minuman == 2 :
-                    print('\n- List Minuman Panas 🥵')
+                    print('\n      --------------------    ')
+                    print('     | List Minuman Panas |     ')
+                    print('      --------------------    ')
                     print(' --------------------------------')
                     print('|     Nomer       |     Harga    |')
                     print(' --------------------------------')
@@ -249,7 +279,9 @@ while True :
                         if yakin_panas_1 == 'yah' :
                             continue
                         elif yakin_panas_1 == 'tidak' :
-                            print('\nYah Sudah Datang Kembali Yah Kapan\"\n')
+                            print('\n ---------------------')
+                            print('|    Selamat Makan!   |')
+                            print(' ---------------------\n')
                             break
                         else :
                             print('\nAnda Keluar, Masukkan Tidak Dimengerti\n')
@@ -262,7 +294,9 @@ while True :
                         if yakin_panas_2 == 'yah' :
                             continue
                         elif yakin_panas_2 == 'tidak' :
-                            print('\nYah Sudah Datang Kembali Yah Kapan\"\n')
+                            print('\n ---------------------')
+                            print('|    Selamat Makan!   |')
+                            print(' ---------------------\n')
                             break
                         else :
                             print('\nAnda Keluar, Masukkan Tidak Dimengerti\n')
@@ -275,7 +309,9 @@ while True :
                         if yakin_panas_3 == 'yah' :
                             continue
                         elif yakin_panas_3 == 'tidak' :
-                            print('Yah Sudah Datang Kembali Yah Kapan\"\n')
+                            print('\n ---------------------')
+                            print('|    Selamat Makan!   |')
+                            print(' ---------------------\n')
                             break
                         else :
                             print('\nAnda Keluar, Masukkan Tidak Dimengerti\n')
@@ -290,5 +326,7 @@ while True :
                         print('\nMaaf Perintah Tidak Dimengerti\n')
                         break
     else :
-            print("\nSampai Jumpa Lagi Yah!\n")
+            print('\n  -------------------------')
+            print(" | Sampai Jumpa Lagi Yah!  |")
+            print('  -------------------------\n')
             break
