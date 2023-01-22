@@ -22,8 +22,8 @@ while True :
             print('----------------------------')
             print('1. Makanan Berat            |')
             print('2. Makanan Ringan           |')
-            print('4. Kembali Ke Menu Hidangan |')
-            print('5. Keluar ✖️                 |')
+            print('3. Kembali Ke Menu Hidangan |')
+            print('4. Keluar ✖️                 |')
             print('----------------------------')
             input_makanan = int(input('Makanan Apa Yang Kamu Inginkan Kawan? : '))
 
@@ -151,8 +151,8 @@ while True :
             print('-----------------------------')
             print('1. Minuman Dingin            |')
             print('2. Minuman Panas             |')
-            print('4. Kembali Ke Menu Hidangan  |')
-            print('5. Keluar ✖️                  |')
+            print('3. Kembali Ke Menu Hidangan  |')
+            print('4. Keluar ✖️                  |')
             print('-----------------------------')
             input_minuman = int(input("Minuman Apa Yang Kamu Inginkan Kawan? : "))
 
