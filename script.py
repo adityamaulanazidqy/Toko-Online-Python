@@ -1,13 +1,15 @@
 while True :
+    # Pembukaan
+    print('---------------------------------------------')
     print('>_< Selamat Datang Di Warung Python Zidqy >_<')
-    print('👇 Berikut Ini Beberapa List Menu Makanan & Minuman 👇')
-
-    print('\n- List Menu Hidangan')
+    print('---------------------------------------------') 
+    print('\n👇 Berikut Ini Beberapa List Menu Makanan & Minuman 👇\n')
+    print('- List Menu Hidangan')
     print('--------------------')
 
-    print('1. Makanan')
-    print('2. Minuman')
-    print('3. Keluar ✖️')
+    print('1. Makanan          |')
+    print('2. Minuman          |')
+    print('3. Keluar ✖️         |')
 
     print('--------------------')
 
@@ -17,24 +19,24 @@ while True :
 
     if menu == 1 :
             print('\n- List Makanan')
-            print('--------------------')
-            print('1. Makanan Berat')
-            print('2. Makanan Ringan')
-            print('4. Kembali Ke Menu Hidangan')
-            print('5. Keluar ✖️')
-            print('--------------------')
+            print('----------------------------')
+            print('1. Makanan Berat            |')
+            print('2. Makanan Ringan           |')
+            print('4. Kembali Ke Menu Hidangan |')
+            print('5. Keluar ✖️                 |')
+            print('----------------------------')
             input_makanan = int(input('Makanan Apa Yang Kamu Inginkan Kawan? : '))
 
             # Jika Memilih Makanan Berat
             if input_makanan == 1 :
                 print('\n- List Makanan Berat')
-                print('--------------------')
-                print('1. Rujak Cingur  - Harga : 9k')
-                print('2. Nasi Goreng   - Harga : 11k')
-                print('3. Tahu Tek      - Harga : 13k')
-                print('4. Kembali Ke Menu Hidangan')
-                print('5. Keluar ✖️')
-                print('--------------------')
+                print('--------------------------------')
+                print('1. Rujak Cingur  - Harga : 9k   |')
+                print('2. Nasi Goreng   - Harga : 11k  |')
+                print('3. Tahu Tek      - Harga : 13k  |')
+                print('4. Kembali Ke Menu Hidangan     |')
+                print('5. Keluar ✖️                     |')
+                print('--------------------------------')
                 pilih_makananberat = int(input("Pilihlah Berbagai Makanan Berat Di Atas : "))
 
                 if pilih_makananberat == 1 :
@@ -75,7 +77,7 @@ while True :
                         print('Anda Keluar, Masukkan Tidak Dimengerti')
                         break
                 elif pilih_makananberat == 4 :
-                    print("Kembali Ke Menu Hidangan")
+                    print("\nKembali Ke Menu Hidangan\n")
                     continue
                 elif pilih_makananberat == 5 :
                     print("Sampai Jumpa Lagi Yah!")
@@ -86,13 +88,13 @@ while True :
             # Jika Memilih Makanan Ringan
             elif input_makanan == 2 :
                 print('\n- List Makanan Ringan')
-                print('--------------------')
-                print('1. Kripik Tempe  - Harga : 8k')
-                print('2. Citathos      - Harga : 4k')
-                print('3. Roti Nana     - Harga : 2k')
-                print('4. Kembali Ke Menu Hidangan')
-                print('5. Keluar ✖️')
-                print('--------------------')
+                print('------------------------------')
+                print('1. Kripik Tempe  - Harga : 8k |')
+                print('2. Citathos      - Harga : 4k |')
+                print('3. Roti Nana     - Harga : 2k |')
+                print('4. Kembali Ke Menu Hidangan   |')
+                print('5. Keluar ✖️                   |')
+                print('------------------------------')
                 pilih_makananringan = int(input("Pilihlah Berbagai Makanan Ringan Di Atas : "))
 
                 if pilih_makananringan == 1 :
@@ -132,7 +134,7 @@ while True :
                         print('Anda Keluar, Masukkan Tidak Dimengerti')
                         break
                 elif pilih_makananringan == 4 :
-                    print('4. Kembali Ke Menu Hidangan')
+                    print('\nKembali Ke Menu Hidangan\n')
                     continue
                 elif pilih_makananringan == 5 :
                     print("Sampai Jumpa Lagi Yah!")
@@ -146,24 +148,24 @@ while True :
     # Jika Memilih Minuman
     elif menu == 2 :
             print('\n- List Minuman')
-            print('--------------------')
-            print('1. Minuman Dingin')
-            print('2. Minuman Panas')
-            print('4. Kembali Ke Menu Hidangan')
-            print('5. Keluar ✖️')
-            print('--------------------')
+            print('-----------------------------')
+            print('1. Minuman Dingin            |')
+            print('2. Minuman Panas             |')
+            print('4. Kembali Ke Menu Hidangan  |')
+            print('5. Keluar ✖️                  |')
+            print('-----------------------------')
             input_minuman = int(input("Minuman Apa Yang Kamu Inginkan Kawan? : "))
 
             # Jika Memilih Minuman Dingin
             if input_minuman == 1 :
                     print('\n- List Minuman Dingin 🥶')
-                    print('--------------------')
-                    print('1. Es Joshua     - Harga : 4k')
-                    print('2. Es Campur     - Harga : 8k')
-                    print('3. Es Cincau     - Harga : 6k')
-                    print('4. Kembali Ke Menu Hidangan')
-                    print('5. Keluar ✖️')
-                    print('--------------------')
+                    print('-------------------------------')
+                    print('1. Es Joshua     - Harga : 4k  |')
+                    print('2. Es Campur     - Harga : 8k  |')
+                    print('3. Es Cincau     - Harga : 6k  |')
+                    print('4. Kembali Ke Menu Hidangan    |')
+                    print('5. Keluar ✖️                    |')
+                    print('-------------------------------')
                     pilih_minumandingin = int(input("Pilihlah Berbagai Minuman Dingin Di Atas : "))
 
                     if pilih_minumandingin == 1 :
@@ -206,7 +208,7 @@ while True :
                             print('Anda Keluar, Masukkan Tidak Dimengerti')
                             break
                     elif pilih_minumandingin == 4 :
-                        print('4. Kembali Ke Menu Hidangan')
+                        print('\nKembali Ke Menu Hidangan\n')
                         continue
                     elif pilih_makananringan == 5 :
                         print("Sampai Jumpa Lagi Yah!")
@@ -217,13 +219,13 @@ while True :
             # Jika Memilih Minuman Panas
             elif input_minuman == 2 :
                     print('\n- List Minuman Panas 🥵')
-                    print('--------------------')
-                    print('1. Kopi Hitam    - Harga : 8k')
-                    print('2. Kopi ToraMoca - Harga : 4k')
-                    print('3. Kopi Espresso - Harga : 2k')
-                    print('4. Kembali Ke Menu Hidangan')
-                    print('5. Keluar ✖️')
-                    print('--------------------')
+                    print('-------------------------------')
+                    print('1. Kopi Hitam    - Harga : 8k  |')
+                    print('2. Kopi ToraMoca - Harga : 4k  |')
+                    print('3. Kopi Espresso - Harga : 2k  |')
+                    print('4. Kembali Ke Menu Hidangan    |')
+                    print('5. Keluar ✖️                    |')
+                    print('-------------------------------')
                     pilih_minumanpanas = int(input("Pilihlah Berbagai Minuman Panas Di Atas : "))
 
                     if pilih_minumanpanas == 1 :
@@ -266,7 +268,7 @@ while True :
                             print('Anda Keluar, Masukkan Tidak Dimengerti')
                             break
                     elif pilih_minumanpanas == 4 :
-                        print('4. Kembali Ke Menu Hidangan')
+                        print('\nKembali Ke Menu Hidangan\n')
                         continue
                     elif pilih_makananringan == 5 :
                         print("Sampai Jumpa Lagi Yah!")
